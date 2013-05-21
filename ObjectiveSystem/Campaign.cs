@@ -49,7 +49,8 @@ public class Campaign {
 	/// Draws the GUI.
 	/// </summary>
 	public void drawGUI() {
-		missions[currentMission].draw();
+		if(currentMission < missions.Length)
+			missions[currentMission].draw();
 	}
 	
 	/// <summary>
